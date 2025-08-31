@@ -100,7 +100,9 @@
 // }
 
 
+// const API_URL = import.meta.env.VITE_API_BASE_URL;
 const API_URL = import.meta.env.VITE_API_BASE_URL;
+console.log("🌐 API_URL from env:", API_URL);
 
 // Generic request function
 async function request(url, method = "GET", body = null, token = null) {
