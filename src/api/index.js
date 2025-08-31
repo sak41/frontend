@@ -100,7 +100,7 @@
 // }
 
 
-const API_URL = "https://backend-eyt0.onrender.com";
+const API_URL = import.meta.env.VITE_API_BASE_URL;
 
 // Generic request function
 async function request(url, method = "GET", body = null, token = null) {
